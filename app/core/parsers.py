@@ -137,3 +137,9 @@ def get_airports():
             print('Finished saving airports.')
     except Exception as ex:
         logger.error('Airports xml parse error: {}'.format(ex))
+
+
+def get_core_data():
+    get_countries()
+    get_cities()
+    get_airports()
